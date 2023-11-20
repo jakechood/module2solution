@@ -1,0 +1,71 @@
+/********** Base styles **********/
+* {
+  font-family: sans-serif;
+}
+ 
+h1 {
+  margin: 15px;
+}
+
+.container {
+  display: flex;
+  margin: 1rem;
+}
+
+.item {
+  position: relative;
+  border: 2px solid black;
+  padding: 0 0 .25rem .25rem;
+  background: rgb(151, 151, 151);
+  margin: .25rem;
+}
+.itemdescr {
+  position: relative;
+  padding: .5rem;
+}
+.itemtitle {
+  margin-left: 52%;
+  padding: .25rem;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  width: auto;
+  position: center;
+}
+
+#itemtitle1 {
+  background: salmon;
+}
+
+#itemtitle2 {
+  background: red;
+}
+
+#itemtitle3 {
+  background: tan;
+}
+
+/********** Large devices only **********/
+@media screen and (min-width: 992px) {
+  .col-lg-3 {
+    width: 33.333%; 
+  }
+}
+
+
+/********** Medium devices only **********/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .col-lg-3 {
+      width: 48%;
+    }
+  #item3 {
+    width: 98%;
+    }
+}
+
+/********** Small devices only **********/
+@media screen and (max-width: 767px) {
+  .col-lg-3 {
+    width: 98%;
+    height: auto;
+  }
+}
