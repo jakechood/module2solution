@@ -1,49 +1,71 @@
 /********** Base styles **********/
-*/ {
-    margin: 1rem;
+* {
+  font-family: sans-serif;
 }
-
+ 
 h1 {
-  margin-bottom: 15px;
+  margin: 15px;
 }
 
-.col-lg-3 {
-    border: 2px solid black;
-    padding: 2px
-    background-color: beige;
+.container {
+  display: flex;
+  margin: 1rem;
+}
+
+.item {
+  position: relative;
+  border: 2px solid black;
+  padding: 0 0 .25rem .25rem;
+  background: rgb(151, 151, 151);
+  margin: .25rem;
 }
 .itemdescr {
-    border-style: border-box;
-  background-color: Beige;
-  width: 30%;
-  height: auto;
+  position: relative;
+  padding: .5rem;
 }
 .itemtitle {
-    padding: 2px;
-    border-style: border-box;
-  background-color: red;
-  width: itemtitle.length;
-  height: auto;
+  margin-left: 52%;
+  padding: .25rem;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  width: auto;
+  position: center;
+}
+
+#itemtitle1 {
+  background: salmon;
+}
+
+#itemtitle2 {
+  background: red;
+}
+
+#itemtitle3 {
+  background: tan;
 }
 
 /********** Large devices only **********/
-@media (min-width: 1200px) {
-  #col-lg-3 {
-    width: 30%;
-    height: auto;
+@media screen and (min-width: 992px) {
+  .col-lg-3 {
+    width: 33.333%; 
+  }
 }
 
 
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  #o1 {
-    width: 30%;
-  }
-  #o2 {
-    width: 100px;
-    height: 100px;
-  }
-  body {
-    background-color: blue;
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .col-lg-3 {
+      width: 48%;
+    }
+  #item3 {
+    width: 98%;
+    }
+}
+
+/********** Small devices only **********/
+@media screen and (max-width: 767px) {
+  .col-lg-3 {
+    width: 98%;
+    height: auto;
   }
 }
