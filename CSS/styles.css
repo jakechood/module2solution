@@ -45,7 +45,7 @@ h1 {
 }
 
 /********** Large devices only **********/
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .col-lg-3 {
     width: 33.333%; 
   }
@@ -53,7 +53,7 @@ h1 {
 
 
 /********** Medium devices only **********/
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .col-lg-3 {
       width: 48%;
     }
@@ -63,7 +63,7 @@ h1 {
 }
 
 /********** Small devices only **********/
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .col-lg-3 {
     width: 98%;
     height: auto;
